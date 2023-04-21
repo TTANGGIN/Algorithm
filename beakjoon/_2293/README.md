@@ -1,4 +1,4 @@
-# [백준 2293번 : 설탕 배달](https://www.acmicpc.net/problem/2293)
+# [백준 2293번 : 동전 1](https://www.acmicpc.net/problem/2293)
 
 - Solved : 2023.03.20
 - Language : Java 11
