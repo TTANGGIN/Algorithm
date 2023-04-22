@@ -1,6 +1,6 @@
 # [백준 16953번 : A → B](https://www.acmicpc.net/problem/16953)
 
-- Solved : 2023.03.22
+- Solved : 2023.04.22
 - Language : Java 11
 - Memory : 	19272 KB
 - Time : 164 ms
