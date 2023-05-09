@@ -1,4 +1,4 @@
-# [프로그래머스 169198 : 주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/169198)
+# [프로그래머스 169198 : 당구 연습](https://school.programmers.co.kr/learn/courses/30/lessons/169198)
 
 - Solved : 2023.05.08
 - Language : C# 6.0
