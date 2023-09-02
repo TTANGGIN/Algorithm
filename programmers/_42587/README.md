@@ -2,7 +2,7 @@
 
 - Solved : 2023.09.02
 - Language : C# 6.0
-- 
+- [Problem Solving](https://ttanggin.notion.site/d27d6df3c67c4a31a03eb166fd117886?pvs=4)
 
 ### **문제 설명**
 
