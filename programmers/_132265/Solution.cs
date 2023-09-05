@@ -7,43 +7,47 @@ public class Solution
     {
         int answer = 0;
 
-        HashSet<int> s1 = new HashSet<int>();
-        HashSet<int> s2 = new HashSet<int>();
+        Dictionary<int, int> freqMap = new Dictionary<int, int>(topping.Length);
 
-        for (int i = 1; i < topping.Length - 1; i++)
+        foreach (int item in topping)
         {
-            for (int j = 0; j < i; j++)
+            if (freqMap.ContainsKey(item))
             {
-                if (!s1.Contains(topping[j]))
-                {
-                    s1.Add(topping[j]);
-                }
+                freqMap[item]++;
+            }
+            else
+            {
+                freqMap[item] = 1;
+            }
+        }
+
+        HashSet<int> left = new HashSet<int>();
+        int right = freqMap.Count;
+
+        for (int i = 0; i < topping.Length - 1; i++)
+        {
+            if (!left.Contains(topping[i]))
+            {
+                left.Add(topping[i]);
             }
 
-            for (int k = i; k < topping.Length; k++)
+            if (freqMap[topping[i]] == 1)
             {
-                if (!s2.Contains(topping[k]))
-                {
-                    s2.Add(topping[k]);
-                }
+                freqMap.Remove(topping[i]);
+                right--;
+            }
+            else
+            {
+                --freqMap[topping[i]];
             }
 
-            if (s1.Count == s2.Count)
+            if (left.Count == right)
             {
                 answer++;
             }
-
-            s1.Clear();
-            s2.Clear();
         }
 
         return answer;
     }
 
-    //// pos : left = 0, right = 1
-    //public int cutter(int pos, int[] left, int[] right)
-    //{
-    //    if ()
-    //    return 0;
-    //}
 }
